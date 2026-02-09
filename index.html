@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Portal Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🏫 College Portal</h1>
+        
+        <!-- Login Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showLogin('student')">Student</button>
+            <button class="tab-btn" onclick="showLogin('teacher')">Teacher</button>
+            <button class="tab-btn" onclick="showLogin('admin')">Admin</button>
+        </div>
+
+        <!-- Student Login -->
+        <div id="student-login" class="login-form">
+            <h2>Student Login</h2>
+            <div class="form-group">
+                <input type="text" id="studentId" placeholder="Student ID">
+            </div>
+            <div class="form-group">
+                <input type="password" id="studentPass" placeholder="Password">
+            </div>
+            <button class="login-btn" onclick="login('student')">Login</button>
+            <p class="demo">Demo: ID: 101 | Pass: 123</p>
+        </div>
+
+        <!-- Teacher Login -->
+        <div id="teacher-login" class="login-form" style="display:none">
+            <h2>Teacher Login</h2>
+            <div class="form-group">
+                <input type="text" id="teacherId" placeholder="Teacher ID">
+            </div>
+            <div class="form-group">
+                <input type="password" id="teacherPass" placeholder="Password">
+            </div>
+            <button class="login-btn" onclick="login('teacher')">Login</button>
+            <p class="demo">Demo: ID: 201 | Pass: 123</p>
+        </div>
+
+        <!-- Admin Login -->
+        <div id="admin-login" class="login-form" style="display:none">
+            <h2>Admin Login</h2>
+            <div class="form-group">
+                <input type="text" id="adminUser" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" id="adminPass" placeholder="Password">
+            </div>
+            <button class="login-btn" onclick="login('admin')">Login</button>
+            <p class="demo">Demo: User: admin | Pass: admin</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
